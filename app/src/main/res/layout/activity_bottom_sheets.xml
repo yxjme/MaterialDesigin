@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BottomSheetsActivity">
+    <LinearLayout
+        android:id="@+id/customActionWebView"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimary">
+        <Button
+            android:id="@+id/btn_1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文本一"
+            android:onClick="btn1" />
+        <Button
+            android:id="@+id/btn_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="文本二"
+            android:onClick="btn2"/>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:id="@+id/nested_scroll_view"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:behavior_hideable="true"
+        app:behavior_peekHeight="150dp"
+        android:layout_gravity="bottom"
+        android:background="@color/colorAccent"
+        app:layout_behavior="@string/bottom_sheet_behavior">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:text="的發射點"/>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

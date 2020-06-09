@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ButtonsActivity"
+    android:orientation="vertical">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".ButtonsActivity"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/textButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text button"
+            style="@style/Widget.MaterialComponents.Button.TextButton" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text button"
+            style="@style/Widget.MaterialComponents.Button.OutlinedButton" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text button"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Dialog.Flush"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Text button"
+            app:icon="@mipmap/ic_launcher"
+            style="@style/Widget.MaterialComponents.Button.TextButton.Icon" />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outlined button"
+            style="?attr/materialButtonOutlinedStyle"/>
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Outlined button"
+            style="?attr/materialButtonStyle"/>
+
+        <com.google.android.material.button.MaterialButtonToggleGroup
+            android:id="@+id/toggleButton"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+            <Button
+                android:id="@+id/button1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 1"
+                android:layout_weight="1"
+                style="?attr/materialButtonOutlinedStyle" />
+            <Button
+                android:id="@+id/button2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 2"
+                android:layout_weight="1"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+            <Button
+                android:id="@+id/button3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Button 3"
+                android:layout_weight="1"
+                style="?attr/materialButtonOutlinedStyle"
+                />
+        </com.google.android.material.button.MaterialButtonToggleGroup>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>
